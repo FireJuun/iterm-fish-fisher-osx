@@ -44,7 +44,7 @@ __Highly recommended__ to run the script below under Bash session in default Ter
 I can not guarantee proper installation outside of Terminal.app + Bash Shell.
 
 ```shell
-bash <(curl -s https://raw.githubusercontent.com/ghaiklor/iterm-fish-fisher-osx/master/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/firejuun/iterm-fish-fisher-osx/master/install.sh)
 ```
 
 ## Manual Installation

@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #title          :install.sh
 #description    :This script will install and configure Fish Shell + Fisher.
-#author         :ghaiklor
+#author         :ghaiklor, firejuun
 #date           :2017-12-10
 #version        :0.1
-#usage          :bash <(curl -s https://raw.githubusercontent.com/ghaiklor/iterm-fish-fisher-osx/master/install.sh)
+#usage          :bash <(curl -s https://raw.githubusercontent.com/firejuun/iterm-fish-fisher-osx/master/install.sh)
 #bash_version   :3.2.57(1)-release
 #===================================================================================
 
@@ -12,12 +12,12 @@ set -e
 trap on_sigterm SIGKILL SIGTERM
 
 TEMP_DIR=$(mktemp -d)
-GITHUB_REPO_URL_BASE="https://github.com/ghaiklor/iterm-fish-fisher-osx/"
+GITHUB_REPO_URL_BASE="https://github.com/firejuun/iterm-fish-fisher-osx/"
 HOMEBREW_INSTALLER_URL="https://raw.githubusercontent.com/Homebrew/install/master/install.sh"
 COLOR_SCHEME_URL="https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors"
 NERD_FONT_URL="https://github.com/ryanoasis/nerd-fonts/blob/25eec835188d2316ef3fe59820950d9f90c5bcf4/patched-fonts/Meslo/M-DZ/Regular/complete/Meslo%20LG%20M%20DZ%20Regular%20Nerd%20Font%20Complete%20Mono.ttf?raw=true"
 FISHERMAN_URL="https://git.io/fisher"
-PLUGINS_INSTALLER_URL="https://raw.githubusercontent.com/ghaiklor/iterm-fish-fisher-osx/master/install_plugins.sh"
+PLUGINS_INSTALLER_URL="https://raw.githubusercontent.com/firejuun/iterm-fish-fisher-osx/master/install_plugins.sh"
 RESET_COLOR="\033[0m"
 RED_COLOR="\033[0;31m"
 GREEN_COLOR="\033[0;32m"
@@ -158,7 +158,7 @@ function install_iTerm2() {
         blue_color
         echo "Installing iTerm2..."
 
-        brew cask install iterm2
+        brew install --cask iterm2
 
         green_color
         echo "iTerm2 installed!"

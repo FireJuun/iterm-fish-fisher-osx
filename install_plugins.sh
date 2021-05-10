@@ -1,10 +1,10 @@
 #!/usr/bin/env fish
 #title          :install_plugins.sh
 #description    :This script will install and configure themes and plugins for Fish Shell.
-#author         :ghaiklor
+#author         :ghaiklor, firejuun
 #date           :2017-12-11
 #version        :0.1
-#usage          :curl -s https://raw.githubusercontent.com/ghaiklor/iterm-fish-fisher-osx/master/install_plugins.sh | fish
+#usage          :curl -s https://raw.githubusercontent.com/firejuun/iterm-fish-fisher-osx/master/install_plugins.sh | fish
 #fish_version   :2.7.0
 #===================================================================================
 
@@ -30,7 +30,8 @@ fisher install oh-my-fish/plugin-node-binpath
 fisher install jorgebucaran/nvm.fish
 
 fisher install oh-my-fish/plugin-pj
-set -Ux PROJECT_PATHS ~/Library/Projects
+set -Ux PROJECT_PATHS ~/workspace ~/dev
+abbr -a pjo pj open
 
 fisher install oh-my-fish/plugin-rustup
 fisher install markcial/upto

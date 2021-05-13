@@ -47,6 +47,17 @@ I can not guarantee proper installation outside of Terminal.app + Bash Shell.
 bash <(curl -s https://raw.githubusercontent.com/firejuun/iterm-fish-fisher-osx/master/install.sh)
 ```
 
+If you want to use the hotkeys / transparent iTerm profile, download the iTerm profile from this repo:
+```shell
+curl https://raw.githubusercontent.com/firejuun/iterm-fish-fisher-osx/master/iTerm-Hotkey-Profiles.json ~/Downloads/iTerm-Hotkey-Profiles.json
+```
+
+Then open iTerm2 -> File -> Preferences -> Profiles -> Other Actions -> Import JSON Profiles
+
+Import the `iTerm-Hotkey-Profiles.json` file from your Downloads folder
+
+Finally, select the `Hotkeys - Default` -> Other Actions -> Set as Default. From here on, pressing `option + space` will open the Hotkeys - Default terminal window, and `control + control` will open the Hotkeys - Top terminal window.
+
 ## Manual Installation
 
 ### Command Line Tools

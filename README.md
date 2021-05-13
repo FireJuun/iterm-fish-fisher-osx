@@ -49,7 +49,7 @@ bash <(curl -s https://raw.githubusercontent.com/firejuun/iterm-fish-fisher-osx/
 
 If you want to use the hotkeys / transparent iTerm profile, download the iTerm profile from this repo:
 ```shell
-curl https://raw.githubusercontent.com/firejuun/iterm-fish-fisher-osx/master/iTerm-Hotkey-Profiles.json ~/Downloads/iTerm-Hotkey-Profiles.json
+curl https://raw.githubusercontent.com/firejuun/iterm-fish-fisher-osx/master/iTerm-Hotkey-Profiles.json --output ~/Downloads/iTerm-Hotkey-Profiles.json
 ```
 
 Then open iTerm2 -> File -> Preferences -> Profiles -> Other Actions -> Import JSON Profiles

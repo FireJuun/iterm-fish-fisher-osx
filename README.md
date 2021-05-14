@@ -30,7 +30,7 @@ Installs a lot of useful plugins for Fish Shell:
 - `bass` plugin that makes easy to use scripts written for Bash Shell in Fish Shell.
 - Plugin `done` that notifies you when the process is finished. i.e. you can run `npm install` command and switch back into your browser. When `npm install` is done, you will get OSX notification.
 - `fzy` plugin adds a hotkey <kbd>Ctrl</kbd>+<kbd>R</kbd> that allows to show and search in your command history.
-- `pj` function allows to easily jump between your favorite directories. It installs with configured `~/Library/Projects` folder, so you can jump to any of your projects by calling `pj <PROJECT_FOLDER_NAME>`.
+- `pj` function allows to easily jump between your favorite directories. It installs with configured `~/workspace` and `~/dev` folders, so you can jump to any of your projects by calling `pj <PROJECT_FOLDER_NAME>`. Note that this script will also make the above `~/workspace` and `~/dev` folders, if they don't already exist. Use one folder for your primary work, and the other for projects or repos you may call occasionally or want to test out.
 - `upto` function gets you to a parent folder. I.e. you're inside `a/b/c/d/e/`, calling `upto b` will navigate you into `a/b`.
 - ...and others, you can find the full list below in manual guide.
 

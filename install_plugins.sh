@@ -30,7 +30,10 @@ fisher install oh-my-fish/plugin-node-binpath
 fisher install jorgebucaran/nvm.fish
 
 fisher install oh-my-fish/plugin-pj
+mkdir -p ~/workspace
+mkdir -p ~/dev
 set -Ux PROJECT_PATHS ~/workspace ~/dev
+set -Ux EDITOR code
 abbr -a pjo pj open
 
 fisher install oh-my-fish/plugin-rustup
